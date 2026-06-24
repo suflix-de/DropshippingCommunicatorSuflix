@@ -2,7 +2,7 @@
     "name": "DropshippingCommunicatorSuflix",
     "namespace": "DropshippingCommunicatorSuflix",
     "type": "backend",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "license": "MIT",
     "author": "Suflix",
     "email": "post@suflix.de",
@@ -15,6 +15,6 @@
     "pluginIcon": "icon_plugin_xs.png",
     "serviceProvider": "DropshippingCommunicatorSuflix\\Providers\\DropshippingCommunicatorSuflixServiceProvider",
     "platform": {
-        "php": ">=8.0 <8.1"
+        "php": ">=7.3 <8.1"
     }
 }

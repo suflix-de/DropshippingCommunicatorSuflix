@@ -219,10 +219,13 @@ class TxtFileService
     }
 
     private function val($object, string $key): string
-    {
-        if ($object === null) return '';
-        if (is_array($object))  return (string)($object[$key] ?? '');
-        if (is_object($object)) return (string)($object->$key ?? '');
-        return '';
+{
+    if ($object === null) return '';
+    if (is_array($object)) return (string)($object[$key] ?? '');
+    if (is_object($object)) {
+        $arr = json_decode(json_encode($object), true);
+        return (string)($arr[$key] ?? '');
     }
+    return '';
+}
 }

@@ -9,10 +9,11 @@ use DropshippingCommunicatorSuflix\EventProcedures\SendOrderMailProcedure;
 
 class DropshippingCommunicatorSuflixServiceProvider extends ServiceProvider
 {
-    public function register()
-    {
-        $this->getApplication()->register(DropshippingCommunicatorSuflixRouteServiceProvider::class);
-    }
+public function register()
+{
+    $this->getApplication()->register(DropshippingCommunicatorSuflixRouteServiceProvider::class);
+    $this->getApplication()->bind(SendOrderMailProcedure::class); // ← das fehlte
+}
 
     public function boot(EventProceduresService $eventProceduresService)
     {

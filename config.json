@@ -1,0 +1,67 @@
+{
+    "formatVersion": 1,
+    "menu": {
+        "suflix": {
+            "label": "Suflix Einstellungen",
+            "fullWidth": true,
+            "formFields": {
+                "supplier.customerNo": {
+                    "type": "inputText",
+                    "required": true,
+                    "label": "Händlerkundennummer beim Lieferanten",
+                    "options": {
+                        "defaultValue": "11061"
+                    }
+                },
+                "mail.recipients": {
+                    "type": "inputText",
+                    "required": true,
+                    "label": "Empfänger E-Mail-Adressen (komma- oder semikolongetrennt)",
+                    "options": {
+                        "defaultValue": ""
+                    }
+                },
+                "mail.bcc": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "BCC Empfänger",
+                    "options": {
+                        "defaultValue": ""
+                    }
+                },
+                "mail.subject": {
+                    "type": "inputText",
+                    "required": true,
+                    "label": "E-Mail Betreff (Platzhalter: [OrderId])",
+                    "options": {
+                        "defaultValue": "Neue Kundenbestellung für Auftrag: [OrderId]"
+                    }
+                },
+                "mail.body": {
+                    "type": "inputTextArea",
+                    "required": true,
+                    "label": "E-Mail Text (HTML erlaubt, Platzhalter: [OrderId])",
+                    "options": {
+                        "defaultValue": "Hallo,<br />\nwir haben eine neue Bestellung mit Order-ID: [OrderId] zum schnellstmöglichen Versand an unseren Kunden! Die genauen Artikeldaten entnehmen Sie bitte der angehängten TXT-Datei.<br /><br />\nMit freundlichem Gruß<br />\nSuflix"
+                    }
+                },
+                "txt.filename": {
+                    "type": "inputText",
+                    "required": true,
+                    "label": "TXT Dateiname (Platzhalter: [OrderId])",
+                    "options": {
+                        "defaultValue": "Auftrag_[OrderId].txt"
+                    }
+                },
+                "items.bundleVariationIds": {
+                    "type": "inputTextArea",
+                    "required": false,
+                    "label": "Bundle-Varianten-IDs (semikolongetrennt) – Elternartikel werden übersprungen, nur Paketinhalte werden exportiert",
+                    "options": {
+                        "defaultValue": ""
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "name": "DropshippingCommunicatorSuflix",
+    "namespace": "DropshippingCommunicatorSuflix",
+    "type": "template",
+    "version": "1.1.5",
+    "license": "MIT",
+    "author": "Suflix",
+    "email": "post@suflix.de",
+    "description": "Erstellt eine TXT-Datei aus Auftragsdaten und versendet sie mit Lieferschein per E-Mail.",
+    "shortDescription": {
+        "de": "Suflix TXT-Export und Mailversand",
+        "en": "Suflix TXT export and email dispatch"
+    },
+    "authorIcon": "icon_author_xs.png",
+    "pluginIcon": "icon_plugin_xs.png",
+    "serviceProvider": "DropshippingCommunicatorSuflix\\Providers\\DropshippingCommunicatorSuflixServiceProvider",
+    "platform": {
+        "php": ">=7.3 <8.3"
+    }
+}

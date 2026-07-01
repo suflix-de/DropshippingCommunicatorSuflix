@@ -1,0 +1,95 @@
+{
+    "formatVersion": 1,
+    "menu": {
+        "suflix": {
+            "label": "Suflix Einstellungen",
+            "fullWidth": true,
+            "formFields": {
+                "supplier.customerNo": {
+                    "type": "inputText",
+                    "required": true,
+                    "label": "Händlerkundennummer beim Lieferanten",
+                    "options": { "defaultValue": "11061" }
+                },
+                "mail.recipients": {
+                    "type": "inputText",
+                    "required": true,
+                    "label": "Empfänger E-Mail-Adressen (komma- oder semikolongetrennt)",
+                    "options": { "defaultValue": "post@suflix.de" }
+                },
+                "mail.bcc": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "BCC Empfänger",
+                    "options": { "defaultValue": "post@suflix.de" }
+                },
+                "mail.subject": {
+                    "type": "inputText",
+                    "required": true,
+                    "label": "E-Mail Betreff (Platzhalter: [OrderId])",
+                    "options": { "defaultValue": "Sanitaerfixx: Neue Kundenbestellung für Auftrag: [OrderId]" }
+                },
+                "mail.body": {
+                    "type": "inputTextArea",
+                    "required": true,
+                    "label": "E-Mail Text (HTML erlaubt, Platzhalter: [OrderId])",
+                    "options": { "defaultValue": "Hallo,<br />\nwir von Suflix haben eine neue Bestellungen mit Order-ID: [OrderId] zum schnellstmöglichen Versand an unseren Kunden! Die genauen Artikeldaten entnehmen Sie bitte der angehängten TXT- / PDF-Datei.\n<br /><br />\nMit freundlichem Gruß<br />\nSteffen Schreiber<br />\nSuflix.de" }
+                },
+                "txt.filename": {
+                    "type": "inputText",
+                    "required": true,
+                    "label": "TXT Dateiname (Platzhalter: [OrderId])",
+                    "options": { "defaultValue": "Sanitaerfixx_Auftrag_[OrderId].txt" }
+                },
+                "items.bundleVariationIds": {
+                    "type": "inputTextArea",
+                    "required": false,
+                    "label": "Bundle-Varianten-IDs (semikolongetrennt)",
+                    "options": { "defaultValue": "1863;1870;1871;1872;1873;1874;2189;2190;2191;2192;2193;2182;1864;1876;6272;1877;1878;1879;1880;2194;2195;2196;2197;2198;2183;1865;1881;6271;1882;1883;1884;1885;2199;2200;2201;2202;2203;2184;1866;1886;1887;1888;1889;1890;2204;2205;2206;2207;2208;2185;1867;1891;1892;1893;1894;1895;2209;2210;2211;2212;2213;2186;1868;1896;1897;1898;1899;1900;2214;2215;2216;2217;2218;2187;1869;1901;1902;1903;1904;1905;2219;2220;2221;2222;2223;2188;2323;2333;2332;2331;2330;2329;2327;2326;2325;2324;2334;2328" }
+                },
+                "smtp.host": {
+                    "type": "inputText",
+                    "required": true,
+                    "label": "SMTP Host (z.B. c14.webspace-verkauf.de)",
+                    "options": { "defaultValue": "" }
+                },
+                "smtp.port": {
+                    "type": "inputText",
+                    "required": true,
+                    "label": "SMTP Port (z.B. 587 für TLS, 465 für SSL, 25 für unverschlüsselt)",
+                    "options": { "defaultValue": "587" }
+                },
+                "smtp.username": {
+                    "type": "inputText",
+                    "required": true,
+                    "label": "SMTP Benutzername (E-Mail-Adresse)",
+                    "options": { "defaultValue": "" }
+                },
+                "smtp.password": {
+                    "type": "inputText",
+                    "required": true,
+                    "label": "SMTP Passwort",
+                    "options": { "defaultValue": "" }
+                },
+                "smtp.encryption": {
+                    "type": "inputText",
+                    "required": true,
+                    "label": "SMTP Verschlüsselung (tls oder ssl)",
+                    "options": { "defaultValue": "tls" }
+                },
+                "smtp.from_email": {
+                    "type": "inputText",
+                    "required": true,
+                    "label": "Absender E-Mail-Adresse",
+                    "options": { "defaultValue": "" }
+                },
+                "smtp.from_name": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "Absender Name",
+                    "options": { "defaultValue": "Suflix" }
+                }
+            }
+        }
+    }
+}
